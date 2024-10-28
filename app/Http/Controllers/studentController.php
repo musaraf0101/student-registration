@@ -9,6 +9,7 @@ class studentController extends Controller
     public function viewFrom(){
         return view('student-reg');
     }
-    public function addStudent(){
-}
+    public function addStudent(Request $request){
+        dd($request -> all());
+    }
 }
